@@ -2,6 +2,10 @@
 
 Firebase 環境で動作する Web アプリ（HTML/CSS/JavaScript）のサンプル
 
+## 採用技術
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,firebase)](https://skillicons.dev)
+
 ## 前提条件
 
 - Node.js と npm のインストール

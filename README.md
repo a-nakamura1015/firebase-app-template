@@ -15,6 +15,11 @@ Firebase 環境で動作する Web アプリ（HTML/CSS/JavaScript）のサン�
     ```
     npm install -g firebase-tools
     ```
+- Firebase CLI のログイン
+  - ターミナルまたはコマンドプロンプトで以下のコマンドを実行してください。
+    ```
+    firebase login
+    ```
 
 ## 環境構築
 
@@ -42,6 +47,10 @@ Firebase 環境で動作する Web アプリ（HTML/CSS/JavaScript）のサン�
 
       1. 表示された選択肢の中から `Hosting` にカーソルを合わせて Select キーを押します。マークがついたら Enter キーを押します。
          ![readme-01.png](img/readme-01.png)
+      1. `Please select an otpion:` と問われるため、`Use an existing project` にカーソルを合わせて Enter キーを押します。
+         ![readme-02.png](img/readme-02.png)
+      1. Firebase プロジェクトの一覧が表示されるため、作成したプロジェクトにカーソルを合わせて Enter キーを押します。
+         ![readme-02.png](img/readme-03.png)
       1. その後の質問に対しては以下の画像のように回答することで設定完了です。
 
          - `Do you want to use a web framework? (experimental)` => `No`
@@ -49,11 +58,11 @@ Firebase 環境で動作する Web アプリ（HTML/CSS/JavaScript）のサン�
          - `Configure as a single-page app (rewrite all urls to /index.html)?` => `Yes`
          - `Set up automatic builds and deploys with GitHub?` => `No`
          - `File public/index.html already exists. Overwrite?` => `No`
-           ![readme-02.png](img/readme-02.png)
+           ![readme-02.png](img/readme-04.png)
 
 1. Firebase 設定ファイルを編集する
-   1. firebase-app-template ディレクトリの直下に `.firebaserc` ファイルを作成してください。
-   1. 内容は以下の通りで、`your-firebase-project-id` を Firebase プロジェクトの ID に置換してください。
+   1. firebase-app-template ディレクトリの直下に `.firebaserc` ファイルがあることを確認してください。
+   1. 内容は以下の通りで、`your-firebase-project-id` を Firebase プロジェクトの ID に設定されていることを確認してください。
       ```json
       {
         "projects": {
